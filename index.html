@@ -4,50 +4,37 @@
     <title>Flamingo Lounge Bar</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Satisfy&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet type="style/css" href="index.css">
-    
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">  
 </head>
 <body>
   
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#index.html">Flamingo Lounge Bar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="aboutfl.html">About</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Foods&Drinks
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Foods</a>
-                <a class="dropdown-item" href="#">Drinks</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Coctalils</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#"></a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
-      </nav>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light .sticky-top" id="navbar">
+    <a class="navbar-brand" class="flamingo" href="#">Flamingo Lounge Bar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" id="nav-font" href="#home">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="nav-font" href="#aboutus">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="nav-font" href="#food">Food&Drink</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+    <div id="home">
       <div class="both">
         <section class="photo-1" style="background-image: url(flamingo3.jpg);">
         </section> 
@@ -66,8 +53,160 @@
           <p>Rr.Fadil Hoxha, Prishtine.</p>
         </div>
       </div>
+    </div>
+    <div id="food">  
+      <div class="menu2">
+        <h2 class="animate" data-text="Food">Food</h2>
+        
+        <div class="container w100 p-3">
+          <div class="row d-flex justify-content-between align-items-center animation">
+            <div class="col-xl-4 col-md-6 .col-sm-6">
+              <div class="image">
+                <img src="images/foto1.jpg" alt="patate">
+              </div>
+              <div class="text">
+                <p>Pizza Vegjetariane <span class="price">2.50€</span></p> 
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-6 .col-sm-4">
+              <div class="image">
+                <img src="images/foto2.jpg" alt="file-pule">
+              </div>
+              <div class="text">
+                <p>Hamburger <span class="price">3.00€</span></p>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-6 .col-sm-4">
+              <div class="image">
+                <img src="images/reale.jpg" alt="tortilla + makarona">
+              </div>
+              <div class="text">
+                <p>Makarona me djath <span class="price">2.50€</span></p>
+              </div>  
+            </div>
+            <div class="col-xl-4 col-md-6 .col-sm-4">
+              <div class="image">
+                <img src="images/foto4.jpg" alt="tave-prizreni">
+              </div>
+              <div class="text">  
+                <p>Pule me Perime <span class="price">3.00€</span></p>
+              </div>
+            </div>
+              <div class="col-xl-4 col-md-6 .col-sm-4">
+                <div class="image">
+                  <img src="images/foto5.jpg" alt="pizza-flamingo">
+                </div>
+                <div class="text">
+                  <p>Pasta Boloneze <span class="price">3.00€</span></p>
+                </div>
+              </div>  
+              <div class="col-xl-4 col-md-6 .col-sm-4">
+                <div class="image">
+                  <img src="images/foto6.jpeg" alt="oriz&curry">
+                </div>
+                <div class="text">
+                  <p>Oriz me Perime <span class="price">3.00€</span></p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <video class="video-fluid z-depth-1" autoplay loop controls muted>
+    <source src="video/vid1.mp4.MOV" type="video/mp4" /></video>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+        <section class="page4">  
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="images/birra.png" alt="Birra Peja">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="images/coctail.jpg" alt="alcool coctail">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="images/fotoja.png" alt="coctail">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </section>
+      <div id="aboutus"></div>
+      <section class="contact">
+        <div class="content">
+          <h2>Contact Us</h2>
+          <p>Hi</p>
+        </div>
+        <div class="container">
+          <div class="contactInfo">
+            <div class="box">
+              <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                <div class="text01">
+                  <h3>Address</h3>
+                  <p>Banesa e Arabeve, Kulla II, Prishtine.</p>
+                </div>
+              
+            </div>
+            <div class="box">
+              <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                <div class="text01">
+                  <h3>Phone</h3>
+                  <p>+383(49)***/***</p>
+                </div>
+             
+            </div>
+            <div class="box">
+              <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                <div class="text01">
+                  <h3>Email</h3>
+                  <p>q.sadrija@gmail.com</p>
+                </div>
+            </div>
+          </div>
+          <div class="contactForm">
+            <form>
+              <h2>Send Message</h2>
+              <div class="inputBox">
+                <input type="text" name="" required="required" placeholder="Full Name">
+              </div>
+              <div class="inputBox">
+                <input type="text" name="" required="required" placeholder="Email">
+              </div>
+              <div class="inputBox">
+                <textarea required="required" placeholder="Type your Messages"></textarea>
+                
+              </div>
+              <div class="inputBox">
+                <input type="submit" name="" value="Send">
+            </form>
+          </div>
+         </div>
+        </section>
+      </div>
+        <footer>
+          <div class="footer-content">
+            <h3>Flamingo Lounge Bar</h3>
+            <ul class="social">
+              <li><a href="#"><i class=" fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class=" fa fa-instagram"></i></a></li>
+              <li><a href="#"><i class=" fa fa-google"></i></a></li>
+            </ul>
+          </div>
+          <div class="footer-bottom">
+            <p>copyright &copy;2021 Flamingo. desinged by <span>QS</span>.</p>
+          </div>
 
-    
-
-</body>
+        </footer>
+    </body>
 </html>

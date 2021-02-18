@@ -1,39 +1,34 @@
-
-
+#navbar {
+    background-color: #484a56!important;
+    position: sticky!important;
 }
-.navbar-brand {
-    font-family: Arial, Helvetica, sans-serif ;
-    color: #F5D300;
-    opacity: 1
-}
-background-image {
-    opacity: 1;
-}
-.bg-light {
-    background: grey; !important; 
-    border: 0 !important;
-    box-shadow: none !important;
-    -webkit-box-shadow: none !important;
-    z-index: 9999;
-    height: 10vh;
-    
+.flamingo {
+    color: wheat;
 }
 .navbar-light .navbar-brand {
-    color:  cyan;
+    color: rgba(255,192,203,.9);
+}
+#nav-font {
+    color: white;
+}
+body {
+     background-color: #a4b494; 
+    
 }
 body .sections-together .section-1 .site-heading {
     width: 100%;
     position: relative;
     right: 10px;
     top: 165px;
-    color: black;
+    color: pink;
     text-align: center;
 }
 body .photo-1 { 
     background-size: cover;
     background-position: center;
+    background-position-y: 94%;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     opacity: 0.8; 
     background-repeat: no-repeat;
     animation-name: example;
@@ -84,3 +79,256 @@ body .both .text-3 {
     bottom: 8%;
     color: white;
 }
+@import url('https://fonts.googleapis.com/css2?family=Poopins:wght@700&display=swap');
+*
+{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Poppins' sans-serif;
+}
+
+.animate {
+    position: relative;
+    font-size: 60px;
+    color: #a4b494;
+    -webkit-text-stroke: 0.3vw #484a56;
+    text-transform: uppercase;
+}
+.animate::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: aqua;
+    -webkit-text-stroke: 0vw #484a56;
+    border-right: 1px solid aqua;
+    overflow: hidden;
+    animation: animate 4s linear infinite;
+}
+@keyframes animate {
+     0% {
+         width: 0;
+     }
+     70% {
+         width: 20%;
+     }
+}
+.price{
+    color: green;
+}
+/* .background {
+    background-color: #3b5249;
+    width: 100%;
+    height: 300vh;
+} */
+/* .image {
+    margin: auto;
+} */
+.image img {
+    border-radius: 25%;
+   width: 250px;
+   height: 250px;
+    object-fit: cover;
+    object-position: center;
+}
+} 
+.image:hover {
+    z-index: 1;
+    transform: scale(1.25);
+    box-shadow: 0 25px 40px rgba(0, 0, 0, .5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.text p {
+    font-family: 'Indie Flower', cursive;
+}
+#page3 {
+ background-size: cover;
+ background-position: center;
+ /* background-position-y: 94%; */
+ width: 100%;
+ height: 100vh;
+ opacity: 1;  
+ background-repeat: no-repeat;
+ /* animation-name: example; */
+ /* animation-duration: 8s; */
+ /* position: relative; */
+ /* animation-iteration-count : infinite; */
+ z-index: 999;
+}
+.page4 {
+    widows: 98%;
+    height: 98%;
+    size: cover;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poopins', sans-serif;
+}
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background: url(images/location.png); */
+    width: 100%;
+}
+.contact .content {
+    max-width: 800px;
+    text-align: center;
+    opacity: 1;
+}
+.contact .content h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+}
+.contact .content p {
+    font-weight: 300;
+    color: #fff;
+}
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .contactInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactInfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex; 
+}
+.container .contactInfo .box .icon {
+    min-width: 60px;
+    height: 60px;
+    /* background: #484a56; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+    color: beige;
+}
+.container .contactInfo .box .text01 {
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+    /* background-color: #484a56; */
+    color: #fff;
+    border-radius: 10%;
+}
+.container .contactInfo .box .text01 h3 {
+    font-weight: 500;
+    color: rgb(3, 3, 3);
+}
+.contactForm {
+    width: 40%;
+    padding: 20px;
+    background: transparent;
+}
+.contactForm h2 {
+    font-size: 30px;
+    font-weight: 500;
+}
+.contactForm .inputBox
+{
+    position: relative;
+    width: 100%;
+    
+}
+.contactForm .inputBox input {
+    width: 75%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+}
+.contactForm .inputBox input[type="submit"]
+{
+    width: 100px;
+    background: #00bcd4;
+    color:#fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+footer {
+    background: #484a56;
+    height: auto;
+    font-family: "Open Sans";
+    color: #fff;
+}
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.social {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.social li {
+    margin: 0 10px;
+}
+.social a {
+    text-decoration: none;
+    color: #fff;
+}
+.social a i {
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+.social a:hover i {
+    color: aqua;
+}
+.footer-bottom {
+    background-color: #000000;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span {
+    opacity: .4;
+    font-weight: 200;
+}
+.video-fluid {
+    width: 100%;
+}
+
